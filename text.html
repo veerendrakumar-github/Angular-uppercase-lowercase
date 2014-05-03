@@ -1,0 +1,16 @@
+<div ng-app>
+    <div ng-controller="MyCtrl">
+    <input ng-model="inputStr" type="text" placeholder="Input String"/>
+    <input ng-model="test" type="text" placeholder="Click below"/>
+        <h4>In Javascript</h4>
+    <div class="well">
+        <a class="btn btn-info" ng-click="ToUpper('uppercase')">UPPER CASE</a>
+        <a class="btn btn-warning" ng-click="ToUpper('lowercase')">LOWER CASE</a>
+    </div>
+        <h4>Inline</h4>
+        <div class="well">
+            <p>upper: {{inputStr|uppercase}}</p>
+                <p>lower: {{inputStr|lowercase}}</p>
+        </div>
+</div>
+</div>
